@@ -1,0 +1,111 @@
+/* Reset dasar dan pengaturan umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Latar belakang gelap */
+    color: #ecf0f1; /* Warna teks terang */
+}
+
+/* Gaya navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34495e; /* Biru gelap */
+    padding: 10px 20px;
+    color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #1abc9c; /* Aksen hijau cerah */
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+    background-color: #1abc9c; /* Aksen hijau cerah saat hover */
+    color: #34495e;
+    transform: translateY(-2px);
+}
+
+.menu .logout {
+    margin-left: auto;
+    background-color: #e74c3c; /* Merah cerah untuk logout */
+}
+
+.menu .logout:hover {
+    background-color: #c0392b; /* Merah gelap saat hover */
+}
+
+/* Gaya konten */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #1e2a33; /* Biru gelap */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya kartu */
+.card {
+    background-color: #34495e; /* Warna latar belakang kartu */
+    border: 1px solid #2c3e50; /* Border lebih gelap */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card i {
+    font-size: 3em;
+    color: #1abc9c; /* Aksen hijau cerah untuk ikon */
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #ecf0f1;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #bdc3c7; /* Abu-abu terang */
+}
+
+/* Gaya tambahan untuk responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
